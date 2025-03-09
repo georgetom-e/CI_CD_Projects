@@ -20,12 +20,12 @@ pipeline {
             }
         }
 
-        stage('Agent_3_MySQL_Image') {
+        stage('Agent_3_Maven_Image') {
             agent {
-                docker { image 'mysql:latest' }
+                docker { image 'maven:latest' }
             }
             steps {
-                sh 'mysql SELECT NOW();'
+                sh 'mvn --version'
             }
         }
     }
