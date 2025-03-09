@@ -1,4 +1,5 @@
 pipeline {
+    agent none
     stages {
         stage('Agent_1_Python_Image') {
             agent {
