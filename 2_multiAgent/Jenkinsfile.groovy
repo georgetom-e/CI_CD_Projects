@@ -25,7 +25,7 @@ pipeline {
                 docker { image 'mysql:latest' }
             }
             steps {
-                sh 'SELECT NOW();'
+                sh 'mysql SELECT NOW();'
             }
         }
     }
